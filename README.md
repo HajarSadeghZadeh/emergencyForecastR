@@ -11,7 +11,7 @@ This package is not yet on CRAN. You can install it directly from GitHub using:
 # install.packages("devtools")
 
 # Install the package from GitHub
-devtools::install_github("HajarSadeghzadeh/emergencyForecastR")
+devtools::install_github("HajarSadeghZadeh/emergencyForecastR")
 
 # Load the package
 library(emergencyForecastR)
@@ -25,4 +25,4 @@ forecast_daily_cases(sample_ts)
 
 Author
 
-Hajar Sadeghzadeh
+Hajar Sadegh Zadeh
