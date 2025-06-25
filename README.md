@@ -1,27 +1,24 @@
 # emergencyForecastR
 
-This project contains an R function to forecast daily emergency surgery arrivals using ARIMA.
+An R package to forecast daily emergency surgery arrivals using ARIMA models.
 
-## Features
+## Installation
 
-- Forecasts next 7 days of emergency cases
-- Uses the `forecast` package and `auto.arima()`
-- Output is a standard `forecast` object
-
-## How to Use
-
-1. Load the function:
+This package is not yet on CRAN. You can install it from GitHub:
 
 ```r
-source("forecast_daily_cases.R")
+# install.packages("devtools")
+devtools::install_github("yourusername/emergencyForecastR")
+Usage
 
-    Run the forecast:
+library(emergencyForecastR)
 
-library(forecast)
-# Replace this with your real time series data
-sample_ts <- ts(c(5,6,7,8,10,9,11), frequency = 1)
+# Create a time series of emergency arrivals
+sample_ts <- ts(c(12, 14, 13, 15, 16, 17, 19), frequency = 1)
+
+# Run forecast
 forecast_daily_cases(sample_ts)
 
 Author
 
-Hajar Sadeghzadeh
+Hajar Sadegh Zadeh
